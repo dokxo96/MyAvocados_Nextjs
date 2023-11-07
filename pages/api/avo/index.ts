@@ -1,5 +1,6 @@
 import { IncomingMessage, ServerResponse } from 'http'
 import DB from '@database'
+import * as console from 'console'
 const allAvos = async (req: IncomingMessage, res: ServerResponse) => {
   const db = new DB()
   const allEntries = await db.getAll()
