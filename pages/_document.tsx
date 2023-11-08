@@ -1,27 +1,19 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-  DocumentInitialProps,
-} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          {/*cases when ist needed to modify the head*/}
-          {/*add a favicon*/}
-          {/*import a custom font*/}
-          {/*import css*/}
-          {/*scripts*/}
-          <body className="my-class-css">
-            <Main />
-            <NextScript />
-          </body>
+          {/** FavIcon */}
+          {/** WebFont */}
+          {/** stylesheets */}
+          {/** scripts */}
         </Head>
+        <body className="my-body-class">
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     )
   }
